@@ -1,6 +1,7 @@
 #How to compile ndpi-netfilter:
 
-in your openwrt source dir/package make a folder and name it "ndpi-netfilter2"then put the Makefile inside it then run makemenuconfig and choose iptables-mod-ndpi and kmod-ipt-ndpithen enable support for connlabel, after that exit then run make download V=s it will start to donwload the sourceafter that you can run make package/ndpi-netfilter2/compile V=s .
+0In your openwrt source dir git my tree then run make menuconfig and choose iptables-mod-ndpi and kmod-ipt-ndpithen enable support for connlabel, after that save and exit then run make download V=s it will start to donwload the source after that you can run
+make package/ndpi-netfilter2/compile V=s .
 
 #It's compile and working fine for x86 and x64 arch, but it will fail to compile for MIPS.
 
